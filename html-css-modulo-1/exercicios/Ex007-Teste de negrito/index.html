@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Negrito</title>
+    <style>
+        h1{
+            color: #ade4fa;
+        }
+        h2{
+            
+            color: rgb(255, 255, 255);
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(30, 47, 70, 0.801);
+            color: #fff;
+            text-align: center;
+        }
+        mark{
+            background-color: rgb(7, 206, 241);
+        }
+        div{
+            background-color: rgb(59, 49, 100);
+            box-sizing: border-box;
+            height: 150px;
+            width: 500px;
+            margin-left: 500px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body> <!-- Semantica = significado -->
+    <h1><ins>Testando o Marcações</ins></h1>
+
+        <div class="negrito">
+    <h2>Negrito/destaque</h2>
+    <p>Eu quero falar alguma coisa em <b>Negrito usando a tag B</b><!-- Termo B igual não semantica --></p>
+    <p>Eu quero falar alguma coisa em <strong>Negrito usando a tag Strong</strong><!-- Termo Strong igual Semantica --></p>
+        </div>
+
+        <div class="italico">
+    <h2>Italico</h2>
+    <p>Este texto eu estou testando com apreviatura em <i>italico</i><!--Não semantica--></p>
+    <p>Este texto eu estou testando sem abreviatura com semantica em <em>italico</em></p>
+        </div>
+
+        <div class="marcar">
+    <h2>Marca texto</h2>
+    <p>Posso marcar tambem alguma <mark> com a tag mark </mark></p>
+        </div>
+
+        <div class="subscrito">
+    <h2>Texto subscrito</h2>
+    <p>A água é formada pela molecula H<sup>2</sup>O</p>
+    <p>Com isso eu posso colocar qualquer coisa <sup>Subscrito</sup> </p>
+        </div>
+
+</body>
+</html>

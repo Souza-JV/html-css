@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(128, 128, 128);
+            padding: 5px;
+            box-shadow: 4px 5px 14px 1px rgba(0, 0, 0, 0.479);
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            color: darkslategray;
+        }
+
+        main {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 5px 14px 1px rgba(0, 0, 0, 0.479);
+        }
+
+        article {
+            background-color: rgba(128, 128, 128, 0.541);
+
+        }
+
+        article > aside {
+            background-color: rgba(87, 86, 86, 0.514);
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        section#teste {
+            display: flex;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            background-color: #000000;
+            border-radius: 50%;
+        }
+
+        div#bola:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.479);
+        }
+
+        div#quadrado {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            background-color: #000000;
+            border-radius: 25%;
+        }
+
+        div#quadrado:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.479);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h1>Assuntos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed numquam, velit aliquid fugiat iure, et earum ut laborum sequi animi esse corrupti soluta doloribus vitae quos, tempora quisquam cumque.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus iste aliquid mollitia vel ea magnam, asperiores odio tempore dolores totam deserunt sint harum corrupti optio provident explicabo placeat id hic.</p>
+                <aside>
+                    <p>Artigo criado por Tanana</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Joao</p>
+    </footer>
+    <section id="teste">
+    <div id="bola"></div>
+    <div id="quadrado"></div>
+    </section>
+</body>
+</html>

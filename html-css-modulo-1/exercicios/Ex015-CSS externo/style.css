@@ -1,0 +1,17 @@
+        @charset "UTF-8";
+
+        body{
+            background-color: gray;
+            text-align: center;
+        }
+        h1{
+            color: #000;
+            background-color: rgba(83, 39, 109, 0.479);
+            border-radius: 10px;
+        }
+        p{
+            color: #fff;
+        }
+        #fudeu{
+            color: aqua;
+        }
