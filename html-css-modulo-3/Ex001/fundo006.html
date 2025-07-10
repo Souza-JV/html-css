@@ -7,19 +7,37 @@
     <style>
         body {
             height: 98vh;
-            background-color: black;
+
+            /*SHORTHAND - BACKGROUND
+                color > image > position > repeat > [size] > attachment
+            */
+            
+            background: black url(imagem/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+
+            
+            /*background-color: black;
             background-image: url(imagem/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
-            /*contain mostra a imagem inteira mesmo que ela apareça as barras*/
-            /*cover corta a imagem pra caber 100% na tela*/
+            background-attachment: fixed;*/
 
         }
 
+        /*BACKGROUNDS
+        
+        BACKGROUND - ATTACHMENT
+            muda a forma que o background se comporta na rolagem
+
+        BACKGROUND-SIZE
+            CONTAIN= mostra a imagem inteira mesmo que ela apareça as barras
+            COVER= corta a imagem pra caber 100% na tela
+         */
+
         main {
+            max-width: 400px;
             background-color: white;
-            width: 400px;
             padding: 10px;
             margin: auto;
             border: 2 solid black;
@@ -30,7 +48,9 @@
 <body>
     <main>
         <h1>Teste de imagemn de Fundo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam temporibus numquam adipisci ipsa aspernatur placeat voluptate doloribus suscipit, velit ex consequuntur quam blanditiis nesciunt accusantium harum pariatur ratione fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil atque quidem, ratione quibusdam dolorum incidunt debitis. Aspernatur neque, obcaecati animi ducimus ex, doloribus, pariatur minima illo modi quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad ducimus quia maxime at natus, magni illo, magnam soluta molestiae quae, nobis nulla similique culpa. Iure veritatis consectetur ipsam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque tempora adipisci numquam iusto? Ipsa iure voluptatem numquam voluptates amet ullam eligendi. Voluptas praesentium quam odio nulla ipsum illo sit.</repellat></p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil atque quidem, ratione quibusdam dolorum incidunt debitis. Aspernatur neque, obcaecati animi ducimus ex, doloribus, pariatur minima illo modi quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad ducimus quia maxime at natus, magni illo, magnam soluta molestiae quae, nobis nulla similique culpa. Iure veritatis consectetur ipsam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque tempora adipisci numquam iusto? Ipsa iure voluptatem numquam voluptates amet ullam eligendi. Voluptas praesentium quam odio nulla ipsum illo sit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam temporibus numquam adipisci ipsa aspernatur placeat voluptate doloribus suscipit, velit ex consequuntur quam blanditiis nesciunt accusantium harum pariatur ratione fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil atque quidem, ratione quibusdam dolorum incidunt debitis. Aspernatur neque, obcaecati animi ducimus ex, doloribus, pariatur minima illo modi quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad ducimus quia maxime at natus, magni illo, magnam soluta molestiae quae, nobis nulla similique culpa. Iure veritatis consectetur ipsam a. Lorem ipsum dolor sit amet consectetur adipisicing quasi Lorem ipsum dolor sit us, pariatur minima illo modi quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad ducimus quia maxime at natus, magni illo, magnam soluta molestiae quae, nobis nulla similique culpa. Iure veritatis consectetur ipsam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque tempora adipisci numquam iusto? Ipsa iure voluptatem numquam voluLorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam temporibus numquam adipisci ipsa aspernatur placeat voluptate doloribus suscipit, velit ex consequuntur quam blanditiis nesciunt accusantium harum pariatur ratione fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil atque quidem, ratione quibusdam dolorum incidunt debitis. Aspernatur neque, obcaecati animi ducimus ex, doloribus, pariatur minima illo modi quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad ducimus quia maxime at natus, magni illo, magnam soluta molestiae quae, nobis nulla similique culpa. Iure veritatis consectetur ipsam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque tempora adipisci numquam iusto? Ipsa iure voluptatem numquam voluptates amet ullam eligendi. Voluptas praesentium quam odio nulla ipsum illo sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam temporibus numquam adipisci ipsa aspernatur placeat voluptate doloribus suscipit, velit ex consequuntur quam blanditiis nesciunt accusantium harum pariatur ratione fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil atque quidem, ratione quibusdam dolorum incidunt debitis. Aspernatur neque, obcaecati animi ducimus ex, doloribus, pariatur minima illo modi quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad ducimus quia maxime at natus, magni illo, magnam soluta molestiae quae, nobis nulla similique culpa. Iure veritatis consectetur ipsam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque tempora adipisci numquam iusto? Ipsa iure voluptatem numquam voluptates amet ullam eligendi. Voluptas praesentium quam odio nulla ipsum illo sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam temporibus numquam adipisci ipsa aspernatur placeat voluptate doloribus suscipit, velit ex consequuntur quam blanditiis nesciunt accusantium harum pariatur ratione fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nihil atque quidem, ratione quibusdam dolorum incidunt debitis. Aspernatur neque, obcaecati animi ducimus ex, doloribus, pariatur minima illo modi quasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad ducimus quia maxime at natus, magni illo, magnam soluta molestiae quae, nobis nulla similique culpa. Iure veritatis consectetur ipsam a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque tempora adipisci numquam iusto? Ipsa iure voluptatem numquam voluptates amet ullam eligendi. Voluptas praesentium quam odio nulla ipsum illo sit.ptates amet ullam eligendi. Voluptas praesentium quam odio nulla ipsum illo sit.
+        </p>
     </main>
 </body>
 </html>
