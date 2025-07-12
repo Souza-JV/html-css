@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio003</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+
+        }
+
+        td, th {
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Allen</td>
+                <td>rambo</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Allen</td>
+                <td>rambo</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Allen</td>
+                <td>rambo</td>
+                <td>batman</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Joao guilherme</td>
+                <td>vingadores</td>
+                <td>taxi drive</td>
+                <td>Starwars</td>
+            </tr>
+            <tr>
+                <td>Joao guilherme</td>
+                <td>vingadores</td>
+                <td>taxi drive</td>
+                <td>Starwars</td>
+            </tr>
+            <tr>
+                <td>Joao guilherme</td>
+                <td>vingadores</td>
+                <td>taxi drive</td>
+                <td>Starwars</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4" style="background-color: rgb(230, 230, 230); color: black;">TOTAL</th>
+                <td class="num">1000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
