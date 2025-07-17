@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de form</title>
+</head>
+<body>
+    <h1>Exemplos de formularios</h1>
+
+    <!-- 
+        CHECKED = Ja deixa marcado por natureza
+
+        -Pra um ou mais imput:radio usar o mesmo "name" 
+    -->
+
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxms" checked value="M">
+            <label for="isxms">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfe" value="F">
+            <label for="isxfe">Feminino</label><br>
+            <input type="radio" name="sexo" id="inf" value="NF">
+            <label for="inf">Prefiro não informar</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> 
+            <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> 
+            <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"> 
+            <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esTen" id="iesTen"> 
+            <label for="iesTen">Tenis</label> 
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
