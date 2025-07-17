@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body style="font-family: arial;">
+    <h1>Exemplos de Formularios</h1>
+    <form action="cadastro.php" method="post">
+
+        <!-- Para adicionar uma imagem é obrigatorio que o METHOD do FORM tenha que ser POST para guardar os dados -->
+
+        <p>
+            <label for="ico">Cor:</label>
+            <input style="border: none; background-color: transparent;" type="color" name="co" id="ico" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="5">
+        </p>
+        <label for="ifoto">
+            <fieldset style="width: 500px; height: 200px; background-color: lightgray; text-align: center; padding-top: 50px; border-radius: 50px; display: inline-block;">
+                <legend style="background-color: white; border: 2px solid rgba(0, 0, 0, 0.26);">Selecione foto de perfil</legend>
+                <p>
+                    <label for="ifoto">Foto de perfil</label>
+                    <input type="file" name="foto" id="ifoto">
+                </p>
+            </fieldset>
+        </label>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
