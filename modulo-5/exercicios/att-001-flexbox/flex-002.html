@@ -5,32 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
+        body {
+            font-family: arial;
+            background-color: gray;
+        }
+
         div.conteiner {
             background-color: lightsalmon;
 
             display: flex;
-            transition: width 3.s, heigth 3.s;
-            -o-transition-timing-function: ease;
+            flex-direction: row;
         }
 
-        div.itens {
+        div.item {
             background-color: lightblue;
-            border: 2px solid black;
+            border: 1px solid black;
             text-align: center;
-
-            flex: auto; 
+            padding: 10px;
+            
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="itens">A</div>
-        <div class="itens">B</div>
-        <div class="itens">C</div>
-        <div class="itens">D</div>
-        <div class="itens">E</div>
-        <div class="itens">F</div>
-        <div class="itens">G</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
     </div>
 </body>
 </html>
