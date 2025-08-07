@@ -9,6 +9,7 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
@@ -23,21 +24,86 @@
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
-            align-items: center;
+            align-items: start;
         }
 
-        section {
+        section#pai {
             background-color: lightseagreen;
-            width: 200px;
-            height: 200px;
+            width: 80vw;
+            height: 100vh;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.664);
+
+            display: flex;
+            flex-flow: column;
+            justify-content: start;
+            align-items: center;            
+        }
+
+        section#pai > h1 {
+            margin-top: 20px;
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.562);
+            color: white;
+            text-decoration: underline;
             text-align: center;
+        }
+
+        section#ordem {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: start;
+
+        }
+
+        section.mae {
+            background-color: lightblue;
+            border-radius: 10px;
+            width: 25vw;
+            height: 300px;
+            margin: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.418);
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: start;
+
+        }
+
+        section.mae > div.filho {
+            background-color: gray;
+            padding: 30px;
+            margin: 10px;
+
+            
         }
     </style>
 </head>
 <body>
     <main>
-        <section>
-            <h1>Tela de login</h1>
+        <section id="pai">
+                <h1>Tela de login</h1>
+            <section id="ordem">
+                <section class="mae">
+                    <div class="filho">A</div>
+                    <div class="filho">B</div>
+                    <div class="filho">C</div>
+                    <!-- <div class="filho">D</div> -->
+                </section>
+
+                <section class="mae">
+                    <div class="filho">A</div>
+                    <div class="filho">B</div>
+                    <div class="filho">C</div>    
+                </section>
+
+                <section class="mae">
+                    <div class="filho">A</div>
+                    <div class="filho">B</div>
+                    <div class="filho">C</div>    
+                </section>
+            </section>
         </section>
     </main>
 </body>
