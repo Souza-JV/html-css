@@ -34,9 +34,10 @@
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.664);
 
             display: flex;
-            flex-flow: column;
-            justify-content: start;
-            align-items: center;            
+            flex-flow: column nowrap;
+            justify-content: start; /* Alinha os itens na horizontal */
+            align-items: center; /* Alinha os itens na vertical */
+            align-content: stretch; /* Alinha os itens quando empacotados */
         }
 
         section#pai > h1 {
@@ -52,13 +53,14 @@
             flex-flow: row wrap;
             justify-content: center;
             align-items: start;
+            align-content: flex-start;
 
         }
 
         section.mae {
             background-color: lightblue;
             border-radius: 10px;
-            width: 25vw;
+            width: 23vw;
             height: 300px;
             margin: 20px;
             margin-top: 20px;
@@ -66,16 +68,16 @@
 
             display: flex;
             flex-flow: row wrap;
-            justify-content: start;
-            align-items: start;
-
+            justify-content: start; /* Alinha os itens na horizontal */
+            align-items: start; /* Alinha os itens na vertical */
+            align-content: flex-start; /* Alinha os itens quando empacotados */
         }
 
         section.mae > div.filho {
             background-color: gray;
             padding: 30px;
             margin: 10px;
-
+            
             
         }
     </style>
@@ -85,20 +87,20 @@
         <section id="pai">
                 <h1>Tela de login</h1>
             <section id="ordem">
-                <section class="mae">
+                <section class="mae" id="p">
                     <div class="filho">A</div>
                     <div class="filho">B</div>
                     <div class="filho">C</div>
                     <!-- <div class="filho">D</div> -->
                 </section>
 
-                <section class="mae">
+                <section class="mae" id="s">
                     <div class="filho">A</div>
                     <div class="filho">B</div>
                     <div class="filho">C</div>    
                 </section>
 
-                <section class="mae">
+                <section class="mae" id="t">
                     <div class="filho">A</div>
                     <div class="filho">B</div>
                     <div class="filho">C</div>    
