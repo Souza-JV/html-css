@@ -1,4 +1,2 @@
 # html-css
-Curso de HTML e CSS do CursoEmVideo
-
-Estou aprendendo a criar sites e agora vou gerenciar os meus repositorios!
+Estou aprendendo HTML e CSS do zero para o avançado 
